@@ -470,9 +470,9 @@ html {
 }
 
 /* PROYECTOS */
-.proyectoF {
+/* .proyectoF {
     background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1));
-        /* url('/assets/img/fondocode.png'); */
+        /* url('/assets/img/fondocode.png'); 
 
     background-size: cover;
     height: 120vh;
@@ -482,7 +482,7 @@ html {
     align-items: center;    
     justify-content: center; 
     text-align: center; 
-}
+} */
 
 
 .seccion-proyectos{

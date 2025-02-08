@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'work sans';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* permite deslizar cuando haces click en link del menu*/
+}
+
+
+/*cambia el color de las letras al pasar el puntero sobre el nav*/
+.contenedor-header .encabezado a:hover {
+    color: palevioletred;
+}
+
+/* MENU */
+.contenedor-header {
+    background: #c6d2d8;
+    opacity: 0.6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 59;
+    
+}
+
+.navbar-brand{
+    color: black !important;
+}
+
+.navbar-nav .nav-link{
+    color: black !important;
+
+}
+
+.contenedor-header .encabezado .logo{
+    font-family: 'Righteous';
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* SECCION INICIO*/
+
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)),
+        url(/assets/img/fondo2.jpg);
+    background-size: cover;
+    height: 120vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 40px;
+    background-color: #8b969d;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    opacity: 0.8;
+}
+
+.inicio .contenedor-img img {
+    margin-top: 40px;
+    border: 5px solid #c1ef54;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 40px;
+    font-size: 42px;
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.redes img {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+}
+
+/* tamaño diferente cuando se pase el puntero(efecto hover) */
+.redes img:hover {
+    background-color: palegoldenrod;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    /* Efecto suave al cambiar el tamaño */
+}
+
+/* .inicio .contenido-banner h1 {
+    margin-top: 40px;
+} */
+
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+    
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sobremi .contenedor-seccion p span {
+    color: papayawhip;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+}
+
+.sobremi .fila.col {
+    width: 50%;
+}
+
+
+.sobremi.fila.col h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li b {
+    display: inline-block;
+    color: palegoldenrod;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span {
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes a{
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover {
+    background-color: palevioletred;
+}
+
+.sobremi .fila .col .contenedor-intereses {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.interes img {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    line-height: 22px;
+    margin: 10px 2px;
+    font-size: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button img {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    margin: 5px 5px;
+    font-size: 50px;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: palevioletred;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/* SECCION SKILLS */
+.skills {
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila {
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 80%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.skills .skill>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 70%;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso {
+    background-color: palevioletred;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* height: 20px; */
+}
+
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(227, 107, 159);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .java {
+    width: 0%;
+    animation: 2s java forwards;
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+.skills .skill .htmlcss {
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .comunicacion {
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+
+@keyframes comunicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .trabajo {
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+
+@keyframes trabajo {
+    0% {
+        width: 90%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+.skills .skill .creatividad {
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+
+@keyframes creatividad {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 98%;
+    }
+}
+
+.skills .skill .dedicacion {
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+
+@keyframes dedicacion {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 98%;
+    }
+}
+
+.skills .skill .castellano{
+    width: 0%;
+    animation: 2s castellano forwards;
+}
+
+@keyframes castellano {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.skills .skill .portugues {
+    width: 0%;
+    animation: 2s portugues forwards;
+}
+
+@keyframes portugues{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .ingles {
+    width: 0%;
+    animation: 2s ingles forwards;
+}
+
+@keyframes ingles{
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 68%;
+    }
+}
+
+/* PROYECTOS */
+/* .proyectoF {
+    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)),
+        url(/assets/img/fondocode.png);
+    background-size: cover;
+    height: 120vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+} */
+
+.proyectoF {
+    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)),
+        url(/assets/img/fondocode.png);
+    background-size: cover;
+    height: 120vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    text-align: center; 
+}
+
+
+.seccion-proyectos{
+background-color: #1e2326;
+max-width: 100%;
+margin: auto;
+}
+
+.card {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hace que las tarjetas se agranden un poco al pasar el mouse sobre ellas */
+}
+
+/* Modifica el tamaño de las imágenes de fondo */
+.bg-image {
+    height: 300px; 
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Modificar las columnas */
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 50%; 
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 45%; 
+    }
+}
+
+
+.seccion-proyectos h2 {
+    text-align: center;
+}  
+
+#secondary-content {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#secondary-content article {
+    width: 451px;
+    height: 272px;
+    float: left;
+    background-color: #f5f5f5;
+}
+
+#secondary-content article:first-child {
+    margin-right: 20px;
+}
+
+#secondary-content article .overlay {
+    background: rgba(255, 255, 255, .95);
+    height: 272px;
+    width: 230px;
+    padding: 20px;
+}
+.overlay h4, .overlay p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold; 
+}
+
+.bg-image {
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 270px;               
+    width: 100%;                     
+}
+
+.overlay p small {
+    color: black; 
+}
+
+
+article h4 {
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+
+.more-link {
+    border: 1px solid #02b8dd;
+    color: #02b8dd;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+
+.more-link:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+/* CONTACTO */
+.contacto {
+    /* background-image: url(/assets/img/contacto.jpg); */
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+footer{
+    background-color: #252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes img{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+}
+
+
+footer .arriba img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: palevioletred;
+    color: #fff;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+}
+@media screen and(max-width: 700px) {
+    .sobremi.fila{
+        display: block;
+    }
+    .sobremi.fila.col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila.col{
+        width: 100%;
+    }
+    .skills .fila.col .barra-skill{
+        width: 100%;
+    }
+    .contacto.fila{
+        display: block;
+    }
+    .contacto.fila.col{
+        width: 100%;
+    }
+}
+

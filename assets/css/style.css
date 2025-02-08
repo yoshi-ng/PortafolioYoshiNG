@@ -52,7 +52,7 @@ html {
 
 .inicio {
     background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)),
-        url(/assets/img/fondo2.jpg);
+        url(./assets/img/fondo2.jpg);
     background-size: cover;
     height: 120vh;
     color: #fff;
@@ -470,19 +470,10 @@ html {
 }
 
 /* PROYECTOS */
-/* .proyectoF {
-    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)),
-        url(/assets/img/fondocode.png);
-    background-size: cover;
-    height: 120vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-} */
-
 .proyectoF {
-    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)),
-        url(/assets/img/fondocode.png);
+    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1));
+        /* url('/assets/img/fondocode.png'); */
+
     background-size: cover;
     height: 120vh;
     color: #fff;
